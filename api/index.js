@@ -12,7 +12,7 @@ const RecordSchema = new mongoose.Schema(
 
 // Third argument = collection name inside LabAttendanceDB_Iloreta
 const Record =
-  mongoose.models.Record || mongoose.model('Record', RecordSchema, 'records');
+  mongoose.models.Record || mongoose.model('Record', RecordSchema, 'daily_attendance');
 
 module.exports = async (req, res) => {
   // CORS so the GitHub Pages site can call this API
